@@ -1,18 +1,9 @@
-[build-system]
-requires = ["setuptools", "wheel"]
-build-backend = "setuptools.build_meta"
-
 [tool.poetry]
-name = "model"
+name = "u2net"
 version = "0.1.0"
-description = "U^2-Net for Salient Object Detection"
+description = ""
 authors = []
-exclude = [
-    "tests",
-    "gradio",
-    "figures",
-    "test_data"
-]
+readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.11"
@@ -23,8 +14,8 @@ torch = "*"  # Specify the version if necessary
 torchvision = "*"  # Specify the version if necessary
 scikit-image = "^0.24.0"
 
-[tool.poetry.dev-dependencies]
-pytest = "^6.0"  # Add development dependencies here
-# paddlepaddle = "^2.6.2"
-# paddlehub = "^2.4.0"
-# gradio = "^5.6.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
