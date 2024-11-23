@@ -15,7 +15,7 @@ exclude = [
 ]
 
 packages = [
-    { include = "model"}
+    { include = "model", from = "."}
 ]
 
 [tool.poetry.dependencies]
