@@ -7,9 +7,15 @@ name = "u2net"
 version = "0.1.0"
 description = "U^2-Net for Salient Object Detection"
 authors = []
+exclude = [
+    "tests",
+    "gradio",
+    "figures",
+    "test_data"
+]
 
 packages = [
-    { include = "model", from = "." }
+    { include = "model", from = "." },
 ]
 
 [tool.poetry.dependencies]
