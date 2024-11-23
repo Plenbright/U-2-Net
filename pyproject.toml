@@ -14,8 +14,10 @@ exclude = [
     "test_data"
 ]
 
+include = ["model"]
+
 packages = [
-    { include = "model", from = "." },
+    { include = "model"}
 ]
 
 [tool.poetry.dependencies]
