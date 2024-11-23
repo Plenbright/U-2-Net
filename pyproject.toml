@@ -9,13 +9,13 @@ description = "U^2-Net for Salient Object Detection"
 authors = []
 
 [tool.poetry.dependencies]
-python = "^3.7"
-numpy = "1.15.2"
+python = "^3.11"
+pillow = "^11.0.0"
+numpy = "1.26.4"
 scikit-image = "0.14.0"
+opencv-python = "^4.10.0.84"
 torch = "*"  # Specify the version if necessary
 torchvision = "*"  # Specify the version if necessary
-pillow = "8.1.1"
-opencv-python = "*"  # Specify the version if necessary
 paddlepaddle = "*"  # Specify the version if necessary
 paddlehub = "*"  # Specify the version if necessary
 gradio = "*"  # Specify the version if necessary
