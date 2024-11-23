@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.poetry]
+name = "u-2-net"
+version = "0.1.0"
+description = "U^2-Net for Salient Object Detection"
+authors = []
+
+[tool.poetry.dependencies]
+python = "^3.7"
+numpy = "1.15.2"
+scikit-image = "0.14.0"
+torch = "*"  # Specify the version if necessary
+torchvision = "*"  # Specify the version if necessary
+pillow = "8.1.1"
+opencv-python = "*"  # Specify the version if necessary
+paddlepaddle = "*"  # Specify the version if necessary
+paddlehub = "*"  # Specify the version if necessary
+gradio = "*"  # Specify the version if necessary
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.0"  # Add development dependencies here
